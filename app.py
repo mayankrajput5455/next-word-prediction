@@ -113,7 +113,7 @@ tf.get_logger().setLevel("ERROR")
 @st.cache_resource(show_spinner=False)
 def load_resources():
     try:
-        model = load_model("lstm_model (1).h5", compile=False)
+        model = load_model("lstm_model.h5", compile=False)
 
         with open("tokenizer.pkl", "rb") as f:
             tokenizer = pickle.load(f)
