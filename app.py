@@ -19,7 +19,6 @@ st.set_page_config(
 @st.cache_resource
 def load_resources():
     model = load_model("lstm_model.h5", compile=False)
-
     with open("tokenizer.pkl", "rb") as f:
         tokenizer = pickle.load(f)
 
